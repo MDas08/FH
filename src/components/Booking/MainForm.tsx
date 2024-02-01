@@ -4,6 +4,7 @@ import AgeCityCompany from './AgeCityCompany';
 import Complaint from './Complaint';
 import NamePhone from './NamePhone';
 import Button from '../Button';
+import CityDoctors from './CityDoctors';
 
 interface FormData {
   Name: string;
@@ -41,6 +42,7 @@ const MainForm: React.FC = () => {
       <NamePhone data={data} handleChange={handleChange} />,
       <AgeCityCompany data={data} handleChange={handleChange} />,
       <Complaint data={data} handleChange={handleChange} />,
+      <CityDoctors data={data} handleChange={handleChange}/>
     ];
   
     const handleNextClick = () => {
